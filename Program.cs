@@ -3,6 +3,12 @@ string[] StringArray = Console.ReadLine()!.Split(',');
 
 string[] newStringArray = SelectString(StringArray);
 
+Console.Write("введенный массив: ");
+PrintArray(StringArray);
+
+Console.Write("Отсортированный массив: ");
+PrintArray(newStringArray);
+
 string[] SelectString(string[] StringArray)
 {
     int size = StringArray.Length;
@@ -21,4 +27,16 @@ string[] SelectString(string[] StringArray)
         }
     }
      return newStringArray;
+}
+
+void PrintArray(string[] arrayToPrint)
+{
+    Console.Write ("[");
+    for (int i = 0; i < arrayToPrint.Length - 1; i++)
+    {
+        Console.Write("\"" + arrayToPrint[i] + "\"" + ", ");
+    }
+
+    Console.Write("\"" + arrayToPrint[arrayToPrint.Length - 1] + "\"" + "]");
+    Console.WriteLine();
 }
