@@ -3,7 +3,7 @@ string[] StringArray = Console.ReadLine()!.Split(',');
 
 string[] newStringArray = SelectString(StringArray);
 
-Console.Write("введенный массив: ");
+Console.Write("Введенный массив: ");
 PrintArray(StringArray);
 
 Console.Write("Отсортированный массив: ");
